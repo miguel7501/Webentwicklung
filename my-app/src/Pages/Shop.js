@@ -1,24 +1,18 @@
 import Item from "../Components/Item.js"
 import "./shop.css"
 
-function Shop() {
-    const allItems = [
-        { name: "Shitposts", price:"11,30€"},
-        { name: "Hochlads" },
-        { name: "Getriebesand" },
-        { name: "Sehr langer Name mit unnötig vielen Worten" },
-    ]
-
+function Shop(props) {
+    console.log(props)
     return (
         <div>
             <h1>Shop</h1>
             <div class="itemList">
-                {allItems.map((item) =>(
-                    <Item name={item.name} price={item.price}/>
+            {props.itemList.map( (item) => (
+                <Item name={item.name} price={item.price} image={item.image}/>
                 ))}
             </div>
         </div>
     )
 }
 
-export default Shop;
+export default Shop;    

@@ -5,3 +5,13 @@
     border: none;
     margin: 10px;
 }
+
+.cartList {
+    height: 100%h;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content:left;
+}
