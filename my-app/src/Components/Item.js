@@ -11,9 +11,16 @@ function Item(props) {
                 <h3>{props.name}</h3>
                 <p>{props.price}</p>
                 {props.isCart
-                    ? "Remove" //Placeholder für Anzahl und Remove-Button
-                    : <button class="button">Add to Cart</button>}
-                
+                    ? <div class="CartButtons">
+                        <button onClick={()=>props.increment(props.item)}>+</button>
+                        {props.count}
+                        <button onClick={()=>props.decrement(props.item)}>-</button>
+                        <button onClick={()=>props.delete(props.item)}>X</button>
+
+                    </div>
+                    //Placeholder für Anzahl und Remove-Button
+                    : <button class="button" onClick={() => props.AddItem(props.item)}>Add to Cart</button>
+                }
             </div>
         </div>
     )

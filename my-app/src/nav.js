@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 import logo from './logo.svg';
 
-function Nav() { //Beispiel für functional based Component
+function Nav(props) { //Beispiel für functional based Component
     return (
         <div className="Nav">
-            <Link to="/"><img src="./logo.svg" /></Link>
+            <Link to="/"><h1>Amazon 2</h1></Link>
             <Link to="/">Shop</Link>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">Cart ({props.CartCounter})</Link>
         </div>
 
 

@@ -30,3 +30,9 @@ h3 {
     color: white;
     border: none;
 }
+
+.CartButtons{
+    display:flex;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+}
