@@ -8,10 +8,25 @@ import react, { useState } from 'react';
 
 function App() {
   const allItems = [
-    { id: 1, name: "Shitposts", price: "11,30€", image: "https://img.pr0gramm.com/2021/02/15/e24ee675d656ffc8.jpg" },
-    { id: 2, name: "Memes", price: "2,99€", image: "https://img.pr0gramm.com/2021/02/27/7fa8a64c972a73df.jpg" },
+    {
+      id: 1,
+      name: "Shitposts",
+      price: "11,30€",
+      image: "https://img.pr0gramm.com/2021/02/15/e24ee675d656ffc8.jpg"
+    },
+    {
+      id: 2,
+      name: "Memes",
+      price: "2,99€",
+      image: "https://img.pr0gramm.com/2021/02/27/7fa8a64c972a73df.jpg"
+    },
 
-    { id: 3, name: "Getriebesand", price: "29,99€", image: "https://cdn-0.etel-tuning.eu/384-large_default/getriebesand.jpg" },
+    {
+      id: 3,
+      name: "Getriebesand",
+      price: "29,99€",
+      image: "https://cdn-0.etel-tuning.eu/384-large_default/getriebesand.jpg"
+    },
     {
       id: 4,
       name: "Windows 10 Pro",
@@ -57,16 +72,13 @@ function App() {
   ];
 
   const [Cart, SetCart] = useState([])
-
   //keep track of the number of items in cart
   var CartCounter = Cart.reduce(
     function (temp, Product) {
       return temp + Product.count;
     },
     0)
-
   return (
-
     <div className="App">
       <Router>
         <Nav CartCounter={CartCounter}/>
