@@ -10,15 +10,13 @@ function Item(props) {
             <div class="textcontainer">
                 <h3>{props.name}</h3>
                 <p>{props.price}</p>
-                {props.isCart
+                {props.isCart //Wird nur beim Aufruf aus dem Warenkorb übergeben
                     ? <div class="CartButtons">
                         <button onClick={()=>props.increment(props.item)}>+</button>
                         {props.count}
                         <button onClick={()=>props.decrement(props.item)}>-</button>
                         <button onClick={()=>props.delete(props.item)}>X</button>
-
                     </div>
-                    //Placeholder für Anzahl und Remove-Button
                     : <button class="button" onClick={() => props.AddItem(props.item)}>Add to Cart</button>
                 }
             </div>
