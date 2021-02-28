@@ -1,0 +1,14 @@
+table {
+    padding: 0px;
+}
+td {
+    padding-left: 30px;
+    padding-top: 0px;
+}
+.SendButton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 4, 107);
+    padding: 10px;
+    border: none;
+    font-size:3ch;
+}

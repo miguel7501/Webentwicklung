@@ -12,7 +12,7 @@ function Cart(props) {
 
 
             <Link to="/checkout">
-                <button class="buttonc">Checkout</button>
+                <button class="CheckoutButton">Checkout</button>
             </Link>
         </div>
     )
