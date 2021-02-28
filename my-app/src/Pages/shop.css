@@ -1,0 +1,13 @@
+.itemList {
+    height: 100%h;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content:left;
+}
+
+h1 {
+    text-align: center;
+}
